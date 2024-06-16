@@ -15,8 +15,8 @@
 
 </head>
 
-<body class="zomato-login">
-  <div class="container-fluid loginbox mt-5">
+<body class="zomato-login d-flex align-items-center jusitfy-content-center">
+  <div class="container-fluid loginbox p-4 rounded-3">
     <!-- heading in header -->
     <div class="header">
       Login
@@ -28,58 +28,57 @@
     <form>
       <div class="input-group mt-3">
 
-        <img src="./image/flagicon.png" alt="" class="mx-auto d-block">
-        <button type="button" class="btn btn-light btn-sm">
-        </button>
-        <select class="form-select">
-          <option>+91</option>
-          <option>India | +91</option>
-          <option>Algeria | +213</option>
-          <option>afghanistan | +93</option>
-        </select>
-        <div class="line">
-
+        <div class=" d-flex country">
+          <img src="./image/flagicon.png" alt="" class="ps-3 w-25 d-block">
+          <select class="form-select w-25 border-0 country-code">
+            <option>+91</option>
+            <option>India | +91</option>
+            <option>Algeria | +213</option>
+            <option>afghanistan | +93</option>
+          </select>
+          <input type="number" class="form-control border-0" placeholder="Phone">
         </div>
-        <input type="number" class="form-control text-muted" placeholder="Phone">
       </div>
 
     </form>
 
     <!-- password-input -->
     <div class="d-grid">
-      <button type="button" class="btn btn-danger btn-block  btn-lg mt-4  ">
+      <button type="button" class="btn btn-danger btn-block btn-lg mt-4  ">
         Send one time password
       </button>
 
       <!-- topline -->
-      <div class=" mt-4 top-line">
+      <div class=" mt-2 top-line d-flex jusitfy-content-center align-items-center border-gray">
         <div></div>
         or
         <div></div>
       </div>
+    </div>
 
+    <div class="d-flex flex-column align-items-center jusitfy-content-center">
       <!-- email-input -->
-
-      <button type="button" class="btn email btn-light btn-block  btn-sm mt-4">
+      <a href="#" class=" w-100 p-2 email mt-3 rounded-3 text-decoration-none text-dark fw-700">
         <img src="./image/emailimage.png" alt="">
         Continue with Email
-      </button>
+      </a>
 
       <!-- google-sign in -->
-      <button type="button" class="btn google btn-ilght btn-block  btn-sm mt-4">
+
+      <a href="#" class=" w-100 p-2 google mt-3 rounded-3 text-decoration-none text-dark fw-700">
         <img src="./image/googleimage.png" alt="">
         Sign in with Google
-      </button>
-
+      </a>
     </div>
 
     <!-- bottom-line -->
-    <div class="border-top border-gray mt-5">
+    <div class="border-top border-gray mt-4">
     </div>
 
     <!-- footer-text -->
     <p class=" h4 mt-4 footertext ">New to Zomato? <code class="crateaccount">Create account</code></p>
 
+  </div>
   </div>
 
 
